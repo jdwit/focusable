@@ -32,7 +32,7 @@
   var columnClass = 'focusable-column';
   var columnSelector = '.' + columnClass;
   var options = {
-    fadeDuration: 700,
+    fadeDuration: 0,
     hideOnClick: false,
     hideOnESC: false,
     findOnResize: false
@@ -216,7 +216,7 @@
       return style.sheet;
     })();
 
-    sheet.insertRule(columnSelector + "{ display:none; position: absolute; z-index: 9999; background: rgba(0,0,0,0.8); }", 0);
+    sheet.insertRule(columnSelector + "{ display:none; position: absolute; z-index: 1209; background: rgba(255,255,255,0.2); }", 0);
   }
 
   function getActiveElement() {
@@ -243,4 +243,7 @@
     getOptions: getOptions,
     isVisible: getVisibility
   };
+
+  module.exports = exports.Focusable;
+
 })(window);
