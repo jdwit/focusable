@@ -216,7 +216,7 @@
       return style.sheet;
     })();
 
-    sheet.insertRule(columnSelector + "{ display:none; position: absolute; z-index: 1209; background: rgba(255,255,255,0.2); }", 0);
+    sheet.insertRule(columnSelector + "{ display:none; position: absolute; z-index: 1209; background: rgba(255,255,255,0.6); }", 0);
   }
 
   function getActiveElement() {
